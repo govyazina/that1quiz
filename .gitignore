@@ -4,6 +4,7 @@
 # Misc
 .DS_Store
 .idea
+/dist
 
 # Log files
 npm-debug.log*
