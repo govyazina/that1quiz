@@ -28,7 +28,7 @@ body {
     padding-right: 2rem;
 }
 
-.image {
+img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 
-.title {
+[class*="__title"] {
     font-family: $accent-font;
     font-style: normal;
     font-weight: 900;
@@ -46,7 +46,7 @@ a {
     color: #000000;
 }
 
-.button {
+[class*="__button"] {
     border: none;
     background: $brand-color-green;
     font-family: $default-font;
