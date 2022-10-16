@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
     <!--    font open sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
 
     <!--    normalize css -->
     <link rel="stylesheet" href="./assets/styles/normalize.css">
@@ -25,22 +27,77 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Тот самый Квиз — Главная</title>
+    <title>Ближайшие игры</title>
 
 </head>
+
 <body>
-<div class="wrapper">
-    <header class="header">
+    <div class="wrapper">
+        <header class="header">
 
-    </header>
+        </header>
 
-    <main>
+        <main>
+            <div class="events-main__container">
+                <h1 class="events-main__title">Ближайшие игры</h1>
+                <section class="events-card events-card_green">
+                    <h2 class="events-card__title">Игра #11</h2>
+                    <img class="events-card__photo" src="./assets/images/events/events-photo-11.jpg"
+                        alt="Участники квиза за столом во время обсуждения">
+                    <div class="events-card__info">
+                        <div class="events-card__text">
+                            <p class="events-card__date">13 октября 2022</p>
+                            <p class="events-card__time">19:00 - 22:00</p>
+                        </div>
+                        <a class="events-card__button" href="./quiz11.html">Подробнее об игре</a>
+                    </div>
+                </section>
 
-    </main>
+                <section class="events-card events-card_red">
+                    <h2 class="events-card__title">Игра #12</h2>
+                    <img class="events-card__photo" src="./assets/images/events/events-photo-12.jpg"
+                        alt="Материалы квиза на столе">
+                    <div class="events-card__info">
+                        <div class="events-card__text">
+                            <p class="events-card__date">7 ноября 2022</p>
+                            <p class="events-card__time">19:00 - 22:00</p>
+                        </div>
+                        <a class="events-card__button_red" href="./quiz12.html">Подробнее об игре</a>
+                    </div>
+                </section>
 
-    <footer class="footer">
+                <section class="events-card events-card_blue">
+                    <h2 class="events-card__title">Игра #13</h2>
+                    <img class="events-card__photo" src="./assets/images/events/events-photo-13.jpg"
+                        alt="Участница квиза">
+                    <div class="events-card__info">
+                        <div class="events-card__text">
+                            <p class="events-card__date">???</p>
+                            <p class="events-card__time">19:00 - 22:00</p>
+                        </div>
+                        <a class="events-card__button_blue" href="./quiz13.html">Подробнее об игре</a>
+                    </div>
+                </section>
 
-    </footer>
-</div>
+                <section class="events-card events-card_green">
+                    <h2 class="events-card__title">Игра #14</h2>
+                    <img class="events-card__photo" src="./assets/images/events/events-photo-14.jpg"
+                        alt="Команда участников квиза за столом">
+                    <div class="events-card__info">
+                        <div class="events-card__text">
+                            <p class="events-card__date">???</p>
+                            <p class="events-card__time">19:00 - 22:00</p>
+                        </div>
+                        <a class="events-card__button" href="./quiz14.html">Подробнее об игре</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
 </body>
+
 </html>
