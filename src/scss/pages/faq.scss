@@ -1,2 +1,62 @@
 @import '../layouts/global.scss';
 
+
+
+.faq {
+
+    .faq__container {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        .faq__title {
+            margin-top: 0;
+            margin-bottom: 10vh;
+            text-align: center;
+        }
+
+        .faq-item {
+
+            .faq-question {
+                margin: 20px 0 0;
+
+                .faq-question__trigger {
+                    width: 100%;
+                    height: 100%;
+                    text-align: left;
+                    border: $brand-color-blue solid 2px;
+                    background: #FFFFFF;
+                    font-size: 1.2rem;
+                    padding: 1rem;
+                    box-shadow: 0px 0px 10px 5px rgba(30, 93, 134, 0.75);
+                    cursor: pointer;
+                }
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                height: 0;
+                transition: height 0.5s;
+
+                .faq-answer__content {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+/*.questions-question__trigger_red {
+    border: #761F28 solid 2px;
+    box-shadow: 0px 0px 10px 5px rgba(118, 31, 40, 0.75);
+}
+
+.questions-question__trigger_green {
+    border: #3D6733 solid 2px;
+    box-shadow: 0px 0px 10px 5px rgba(61, 103, 51, 0.75);
+}
+
+.questions-question__trigger_blue {
+    border: #1E5D86 solid 2px;
+    box-shadow: 0px 0px 10px 5px rgba(30, 93, 134, 0.75);
+}*/
