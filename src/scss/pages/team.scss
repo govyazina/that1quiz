@@ -67,9 +67,9 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-top: -3%;
+    margin-top: -2%;
     margin-left: 70%;
-    zoom: 0.8;
+    width: 5%;
   }
   .static {
     display: inline-block;
@@ -86,6 +86,7 @@ a {
   .static__header_logo {
     position: fixed;
     left: 70%;
+    top: -1%;
     zoom:0.8;
 
   }
@@ -95,13 +96,13 @@ a {
     justify-content: center;
     margin-top: 4%;
     margin-bottom: 7%;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-right: 7%;
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 5%;
     color: rgb(11, 11, 11);
-    font-family: "Montserrat", "Montserrat Regular", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     text-decoration: none;
@@ -114,7 +115,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 17%;
+    margin-left: 19%;
     margin-top: 6%;
     font-size: 1.2em;
     width: 60vw;
@@ -144,36 +145,83 @@ a {
     justify-items: center;
     align-items: flex-end;
     margin-top: 19%;
-    margin-right: 0s%;
     zoom:0.8;
   }
+  .main__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+  }
+  .main__team-member-block_evg-title, .main__team-member-block_mar-title, .main__team-member-block_alex-title{
+    display: flex;
+    justify-content: flex-start; 
+    margin-left:3%;
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 1.4rem;
+    text-align:left;
+  }
+  .main__about-our-team, .main__team-member-block_evg-about-in-details, .main__team-member-block_mar-about-in-details, .main__team-member-block_alex-about-in-details{    
+    display: flex;
+    align-content: center; 
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-top:5%;
+    padding-left:7%;
+    padding-right:5%;
+    margin-bottom:7%;
+  }
+  .main__team-member-block_evg-about, .main__team-member-block_mar-about, .main__team-member-block_alex-about{
+    display: flex;
+    justify-content:flex-start;
+    margin-left:3%;
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 1.1rem;
+    text-align:left;
+  }
+
+  .main__we-wait-you{
+    zoom:0.6;
+    margin-top:10%;
+    padding-bottom:20%;
+  }
+
   .footer{
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column: 1/6;
-    grid-row: 5/6;
+   /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);*/
+    grid-column: 1/4;
+    grid-row: 3/4;
 
 }
   .footer__menu{
     list-style-type: none;
-    grid-column: -7/-1;
-    grid-row: 5/6;  
+    grid-column: -5/-1;
+    grid-row: 3/4;  
     background-color:rgba(217, 217, 217, 1); 
   }
   .footer__menu-logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    zoom: 0.8;
+    width: 45%;
+    justify-items: center;
+    margin-left: 22%;
+    margin-top:-5%;
+
   }
-  .footer__menu-item {
+  .footer__menu-item, .footer__menu-item_that1quiz,  .footer__menu-item_what-is {
     display: flex;
     flex-direction:row;
     justify-content: center;
     list-style-type: none;
     align-items: center;
+    margin-top: -5%;
+    margin-left: -10%;
+    padding-bottom: 7%;
     /*display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -181,18 +229,52 @@ a {
     grid-row: 1/2;
     direction: row;*/
     color: rgb(11, 11, 11);
-    font-family: "Arial", sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     text-decoration: none;
     text-align: center;
     transition-duration: 0.25s;
   }
+  .footer__menu-item{
+    font-family: 'Open Sans', sans-serif;
+  }
+  .footer__menu-item_what-is{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: -13%;
+
+  }
+ .footer__menu-item_that1quiz{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    margin-top: 7%;
+    margin-left: 2%;
+    font-size: 1.2rem;
+ }
   .footer__menu-item_socials{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     justify-items: center;
     align-items: flex-end;
+    padding-bottom: 3%;
+    margin-top: -5%;
+    margin-left: -5%;
     zoom:0.8;
+  }
+  .footer__menu-item_socials-facebook, .footer__menu-item_socials-instagram, .footer__menu-item_socials-telega{
+    width: 10%;
+  }
+  .footer__menu-item_authorship{
+    display: flex;
+    padding-bottom: 3%;
+  }
+
+  .menu__item:hover, a:hover {
+    color:#761F28;
+    cursor: pointer;
   }
