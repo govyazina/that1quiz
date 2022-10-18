@@ -1,2 +1,49 @@
 @import '../layouts/global.scss';
 
+.index-main-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+// nav-links
+
+.index-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 25vh;
+  align-items: center;
+}
+
+.index-nav__link {
+  display: block;
+  padding: 10%;
+
+}
+
+.index-nav__link_bg1 {
+  background-image: url("../../design/assets/images/home/index-nav/index-triangle.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+// that-is-t1q
+
+.index-that-is-t1q__title {
+  text-align: center;
+}
+
+.index-that-is-t1q__photo-wrap {
+  background-image: url("../../design/assets/images/home/index-that-is-t1q__bg.svg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-that-is-t1q__photo {
+  padding: 15% 10%;
+}
