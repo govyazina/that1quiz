@@ -2,4 +2,31 @@
 
 .events-card {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+
+    border: 3px rgba(61, 103, 51, 0.2);
+    box-shadow: 0px 0px 15px 0px $brand-color-green;
+}
+
+.events-card_red {
+    box-shadow: 0px 0px 15px 0px $brand-color-red;
+}
+
+.events-card_blue {
+    box-shadow: 0px 0px 15px 0px $brand-color-blue;
+}
+
+.events-card__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.events-card__button_red {
+    background-color: $brand-color-red;
+}
+
+.events-card__button_blue {
+    background-color: $brand-color-blue;
 }
