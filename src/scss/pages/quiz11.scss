@@ -1,0 +1,49 @@
+@import '../layouts/global.scss';
+
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-card__title {
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+
+    align-self: center;
+}
+
+.quiz-card__image {
+    background-image: url(../../design/assets/images/quiz/background.svg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quiz-card__photo {
+    padding: 5% 5%;
+}
+
+.quiz-card__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-card__container {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10vh;
+}
+
+.quiz-card__details {
+    font: $default-font;
+    font-weight: bold;
+}
+
+.quiz-card__text {
+    text-align: center;
+}
+
+.quiz-card__button {
+    align-self: center;
+}
