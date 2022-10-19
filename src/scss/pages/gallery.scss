@@ -9,6 +9,10 @@
 * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
 */
 
+#more {
+    display: none;
+}
+
 .gallery {
     display: flex;
     flex-direction: column;
@@ -34,6 +38,14 @@
         .gallery-card__button {
             margin-top: 2vh;
         }
+    }
+
+    .gallery-card__button_blue {
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+
+        background: $brand-color-blue;
+        cursor: pointer;
     }
 }
 
