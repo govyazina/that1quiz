@@ -5,14 +5,41 @@
     padding: 6rem 0rem 3rem 0rem;
 }
 
+.about-photo-background {
+    background-image: url(../../design/assets/images/about/decoration/photo-background.svg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .about-photo {
     margin-bottom: 6rem;
+    padding: 15% 10%;
 }
 
 .about-block {
     border: 5px solid;
     margin-bottom: 3rem;
+
+    &__decoration {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__circles {
+        height: 50%;
+        width: 50%;
+        padding-top: 0.5rem;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 2rem;
+        font-family: $default-font;
+    }
+
 }
+
 
 .about-block_blue {
     border-color: #1E5D86;
