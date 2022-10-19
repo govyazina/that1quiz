@@ -1,2 +1,42 @@
 @import '../layouts/global.scss';
 
+.quiz-main__container {
+    margin-top: 130px;
+}
+
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 55px;
+
+        align-self: center;
+    }
+
+    &__image {
+        background-image: url(../../design/assets/images/quiz/background.svg);
+    }
+
+    &__details {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        font: $default-font;
+        font-weight: bold;
+    }
+
+    &__text {
+        margin-top: 60px;
+        margin-bottom: 50px;
+
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 50px;
+        margin-bottom: 170px;
+
+        align-self: center;
+    }
+}

@@ -1,2 +1,63 @@
 @import '../layouts/global.scss';
 
+.events-main__title {
+    text-align: center;
+    margin: 8vh 0;
+}
+
+.events-card {
+    margin-bottom: 9vh;
+
+    border: 3px solid rgba(61, 103, 51, 0.2);
+    box-shadow: 0px 0px 15px 0px $brand-color-green;
+}
+
+.events-card_red {
+    border: 3px solid rgba(118, 31, 40, 0.2);
+    box-shadow: 0px 0px 15px 0px $brand-color-red;
+}
+
+.events-card_blue {
+    border: 3px solid rgba(30, 93, 134, 0.2);
+    box-shadow: 0px 0px 15px 0px $brand-color-blue;
+}
+
+.events-card__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.events-card__title {
+    align-self: center;
+}
+
+.events-card__title,
+.events-card__text {
+    font-weight: 700;
+}
+
+.events-card__text,
+.events-card__button {
+    font-size: 0.9rem;
+}
+
+.events-card__button {
+    cursor: pointer;
+}
+
+.events-card__button_red {
+    background-color: $brand-color-red;
+}
+
+.events-card__button_blue {
+    background-color: $brand-color-blue;
+}
+
+.events-card__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
