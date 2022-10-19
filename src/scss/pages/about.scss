@@ -14,7 +14,7 @@
 
 .about-photo {
     margin-bottom: 6rem;
-    padding: 15% 10%;
+    padding: 10% 5%;
 }
 
 .about-block {
@@ -27,8 +27,8 @@
     }
 
     &__circles {
-        height: 50%;
-        width: 50%;
+        height: 2rem;
+        width: 9rem;
         padding-top: 0.5rem;
     }
 
@@ -38,17 +38,71 @@
         font-family: $default-font;
     }
 
+    &_blue {
+        border-color: $brand-color-blue;
+    }
+
+    &_green {
+        border-color: $brand-color-green;
+    }
+
+    &_red {
+        border-color: $brand-color-red;
+    }
+
+}
+
+.about__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+
+
+    &_triangles {
+        background-image: url(../../design/assets/images/about/decoration/triangles.svg);
+        height: 370px;
+        width: 302px;
+    }
+
+    &_circles {
+        background-image: url(../../design/assets/images/about/decoration/circles.svg);
+        height: 370px;
+        width: 302px;
+    }
+
+    &_squares {
+        background-image: url(../../design/assets/images/about/decoration/squares.svg);
+        height: 370px;
+        width: 302px;
+    }
+
+    &_rhombi {
+        background-image: url(../../design/assets/images/about/decoration/rhombi.svg);
+        height: 370px;
+        width: 302px;
+    }
 }
 
 
-.about-block_blue {
-    border-color: #1E5D86;
-}
 
-.about-block_green {
-    border-color: #3D6733;
-}
+.about-faq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
 
-.about-block_red {
-    border-color: #761F28;
+    &__link {
+        font-family: $default-font;
+        font-weight: bold;
+        color: #fff;
+        background-color: $brand-color-red;
+        padding: 4% 10%;
+        margin-bottom: 3rem;
+    }
 }
