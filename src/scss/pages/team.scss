@@ -86,7 +86,8 @@ a {
   .static__header_logo {
     position: fixed;
     left: 70%;
-    top: 1%;
+    zoom: 0.8;
+    top: -1%;
 
   }
   .menu__item {
@@ -156,7 +157,7 @@ a {
     font-size: 1.7rem;
   }
   .main__team-pic-wrap{
-    background-image: url(../../../design/assets/images/team/background_team.svg);
+    background-image: url(../../design/assets/images/team/background_team_new.svg);
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +173,6 @@ a {
   .main__team-member-block_evg-title, .main__team-member-block_mar-title, .main__team-member-block_alex-title{
     display: flex;
     justify-content: flex-start; 
-    margin-left:3%;
     font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 1.4rem;
     text-align:left;
@@ -183,27 +183,42 @@ a {
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
-    text-align: justify;
-    margin-top:5%;
+    text-align: left;
+   /* margin-top:5%;
     padding-left:7%;
+    margin-left:2%;
+    margin-right:2%;
     padding-right:5%;
-    margin-bottom:7%;
+    margin-bottom:7%;*/
   }
   .main__team-member-block_evg-about, .main__team-member-block_mar-about, .main__team-member-block_alex-about{
     display: flex;
     justify-content:flex-start;
-    margin-left:3%;
     font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 1.1rem;
     text-align:left;
   }
 
   .main__we-wait-you{
-    zoom:0.6;
+    display: flex;
+    border: 9px solid #3D6733;
+    /*border: 2px solid #761F28;*/
+    /*background-color:#761F28;;
+    /*zoom:0.6;
     margin-top:10%;
-    padding-bottom:20%;
+    padding-bottom:20%;*/
   }
-
+  .main__we-wait-you-text{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 2em;
+    background-color: #ffffff;
+  }
   .footer{
    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -290,6 +305,5 @@ a {
   }
 
   .menu__item:hover, a:hover {
-    color:#761F28;
     cursor: pointer;
   }
