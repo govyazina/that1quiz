@@ -69,7 +69,7 @@ a {
     justify-content: flex-end;
     margin-top: -2%;
     margin-left: 70%;
-    width: 5%;
+    width: 25%;
   }
   .static {
     display: inline-block;
@@ -86,8 +86,7 @@ a {
   .static__header_logo {
     position: fixed;
     left: 70%;
-    top: -1%;
-    zoom:0.8;
+    top: 1%;
 
   }
   .menu__item {
@@ -156,6 +155,20 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.7rem;
   }
+  .main__team-pic-wrap{
+    background-image: url(../../../design/assets/images/team/background_team.svg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main__team-pic{
+   padding: 15% 10%;    
+  }
+  /*.main__team-pic_inside{
+    width: 50vw;
+    zoom:0.6;
+  }*/
   .main__team-member-block_evg-title, .main__team-member-block_mar-title, .main__team-member-block_alex-title{
     display: flex;
     justify-content: flex-start; 
@@ -263,7 +276,8 @@ a {
     align-items: flex-end;
     padding-bottom: 3%;
     margin-top: -5%;
-    margin-left: -5%;
+    margin-left: 5%;
+    margin-right: 12%;
     zoom:0.8;
   }
   .footer__menu-item_socials-facebook, .footer__menu-item_socials-instagram, .footer__menu-item_socials-telega{
@@ -271,6 +285,7 @@ a {
   }
   .footer__menu-item_authorship{
     display: flex;
+    justify-content: center;
     padding-bottom: 3%;
   }
 
