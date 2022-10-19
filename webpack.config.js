@@ -6,7 +6,7 @@ module.exports = {
     mode: 'development',
 
     output: {
-        path: __dirname + "/dist",
+        path: __dirname + "/design/assets/dist",
         filename: 'js/main.js'
     },
 
