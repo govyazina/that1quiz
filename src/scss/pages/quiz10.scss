@@ -44,6 +44,11 @@
     text-align: center;
 }
 
+a {
+    color: $brand-color-red;
+    cursor: pointer;
+}
+
 .quiz-card__button {
     align-self: center;
 }
