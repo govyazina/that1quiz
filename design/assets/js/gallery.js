@@ -359,3 +359,19 @@ new ItcSlider('.slider', {
   loop: true,
   swipe: true
 });
+
+function readMore() {
+  var hide = document.getElementById("hide");
+  var more = document.getElementById("more");
+  var btn = document.getElementById("btn");
+
+  if (hide.style.display === "none") {
+    hide.style.display = "inline";
+    btn.innerHTML = "Смотреть больше фото";
+    more.style.display = "none";
+  } else {
+    hide.style.display = "none";
+    btn.innerHTML = "Назад к недавним фото";
+    more.style.display = "inline";
+  }
+}
