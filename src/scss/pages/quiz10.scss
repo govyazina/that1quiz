@@ -31,11 +31,13 @@
 .quiz-card__container {
     display: flex;
     flex-direction: column;
-
+    gap: 8vh;
     margin-bottom: 10vh;
 }
 
 .quiz-card__details {
+    margin-top: 5vh;
+
     font: $default-font;
     font-weight: bold;
 }
@@ -44,8 +46,9 @@
     text-align: center;
 }
 
-a {
+.quiz-card__location {
     color: $brand-color-red;
+    text-decoration: underline;
     cursor: pointer;
 }
 
