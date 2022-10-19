@@ -1,2 +1,157 @@
 @import '../layouts/global.scss';
 
+.index-main-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5rem
+}
+
+// nav-links
+
+.index-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100vw;
+  align-items: center;
+  justify-items: center;
+  padding: 4rem 0;
+}
+
+.index-nav__link {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 50vw;
+  height: 50vw;
+}
+
+.index-nav__link_text {
+  padding: 0 17vw;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.index-nav__bg {
+  background-size: 45vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-nav__bg_bg1 {
+  background-image: url("../../design/assets/images/home/index-nav/index-triangle.svg");
+  background-size: 60vw; //фигуру глюкнуло при экспорте из фигмы, отличается от остальных
+}
+
+.index-nav__bg_bg2 {
+  background-image: url("../../design/assets/images/home/index-nav/index-circle.svg");
+}
+
+.index-nav__bg_bg3 {
+  background-image: url("../../design/assets/images/home/index-nav/index-square.svg");
+}
+
+.index-nav__bg_bg4 {
+  background-image: url("../../design/assets/images/home/index-nav/index-rhombus.svg");
+}
+
+
+// that-is-t1q
+
+.index-that-is-t1q {
+  margin-bottom: 5rem;
+}
+
+.index-that-is-t1q__photo-wrap {
+  background-image: url("../../design/assets/images/home/index-that-is-t1q__bg.svg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-that-is-t1q__photo {
+  padding: 15% 10%;
+}
+
+.index-that-is-t1q__text {
+  padding: 5rem 0;
+  margin: 0 0;
+}
+
+.index-that-is-t1q__button-red {
+  background-color: $brand-color-red;
+}
+
+//why-t1q
+
+.index-why-t1q__container {
+  margin-bottom: 5rem;
+}
+
+.index-why-t1q__item {
+  padding: 0.8rem 1rem;
+  margin: 3rem 0;
+  border: 5px solid $brand-color-yellow;
+  box-shadow: -14px -16px 0 2px $brand-color-yellow;
+}
+
+.index-why-t1q__item_blue {
+  border: 5px solid $brand-color-blue;
+  box-shadow: -14px -16px 0 2px $brand-color-blue;
+}
+
+.index-why-t1q__item_green {
+  border: 5px solid $brand-color-green;
+  box-shadow: -14px -16px 0 2px $brand-color-green;
+}
+
+.index-why-t1q__item_red {
+  border: 5px solid $brand-color-red;
+  box-shadow: -14px -16px 0 2px $brand-color-red;
+}
+.index-why-t1q__item_gray {
+  border: 5px solid $brand-color-gray;
+  box-shadow: -14px -16px 0 2px $brand-color-gray;
+}
+
+.index-why-t1q__item_yellow {
+  border: 5px solid $brand-color-yellow;
+  box-shadow: -14px -16px 0 2px $brand-color-yellow;
+}
+
+//our-question
+
+.index-our-question {
+  margin-bottom: 5rem;
+}
+.index-our-question__items {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.index-our-question__item {
+  margin: 2rem 0;
+  background: url("../../design/assets/images/home/index-our-question__items/index-our-question__item_blue.svg") no-repeat left center;
+  vertical-align: middle;
+  list-style: none;
+  padding: 2rem 0;
+  padding-left: 5rem;
+  text-align: left;
+}
+
+
+.index-our-question__bg {
+  background-image: url("../../design/assets/images/home/index-question-gray-bg.svg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-our-question__text {
+
+  padding: 30% 10%;
+}
