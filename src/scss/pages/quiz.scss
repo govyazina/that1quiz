@@ -48,8 +48,11 @@
 
 .quiz-card__location {
     color: $brand-color-red;
-    text-decoration: underline;
     cursor: pointer;
+}
+
+.quiz-card__location:hover {
+    text-decoration: underline;
 }
 
 .quiz-card__button {
