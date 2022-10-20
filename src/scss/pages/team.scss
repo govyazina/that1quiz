@@ -21,20 +21,19 @@ a {
     right: 0 !important;
   }
   .menu__btn {
-    /*border: 3px solid red;*/
-    position: fixed;
     top:4%;
     left: 7%;
     width: 8%;
     height: 8%;
+    position: fixed;
     cursor: pointer;
     z-index: 1;
   }
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    display: block;
     position: absolute;
+    display: block;
     width: 100%;
     height: 0.22vh;
     background-color: #081a8a;
@@ -49,27 +48,27 @@ a {
     top: 1vh;
   }
   .menu__box {
-    display: block;
     position: fixed;
     top: 0;
     right: -120%;
     width: 100%;
-    height: 100vh;
+    height: 100vh;    
+    display: block;
     margin: 0;
     padding: 1vh 0;
     list-style: none;
-    background-color: #ffffff;
+    transition-duration: 0.25s;    
+    background-color: #ffffff; 
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-    transition-duration: 0.25s;
   }
   .menu__logo {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     margin-top: -2%;
     margin-left: 70%;
-    width: 25%;
   }
   .static {
     display: inline-block;
@@ -101,42 +100,40 @@ a {
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 5%;
-    color: rgb(11, 11, 11);
+    text-align: center; 
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     text-decoration: none;
-    text-align: center;
+    color: rgb(11, 11, 11);
     transition-duration: 0.25s;
   }
 
   .menu__item_button {
+    width: 60vw;
+    height: 6.5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-left: 19%;
     margin-top: 6%;
-    font-size: 1.2em;
-    width: 60vw;
-    height: 6.5vh;
-    text-align: center;     
-    background-color:rgba(245, 200, 89, 1);  
-    color: rgba(0, 0, 0, 1);
+    text-align: center; 
     font-family: "Arial Black", "Arial", sans-serif;
     font-style: normal;
-    font-weight: 600;
-   /* border: 2px solid red;*/
+    font-weight: 600;    
+    font-size: 1.2em;    
+    color: rgba(0, 0, 0, 1);    
+    background-color:rgba(245, 200, 89, 1);  
   }
   .menu__item_button-name {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1%;
-    color: rgba(0, 0, 0, 1);
-    margin-left: 0vw;
+    gap: 1%;    
     text-align: center;
+    color: rgba(0, 0, 0, 1);
   }
   .menu__item_socials{
     display: flex;
@@ -152,7 +149,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-left: 3%;
-    margin-top: 30%;
+    margin-top: 10%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.7rem;
   }
@@ -166,47 +163,40 @@ a {
   .main__team-pic{
    padding: 15% 10%;    
   }
-  /*.main__team-pic_inside{
-    width: 50vw;
-    zoom:0.6;
-  }*/
+
   .main__team-member-block_evg-title, .main__team-member-block_mar-title, .main__team-member-block_alex-title{
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;   
+    text-align:left;
     font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 1.4rem;
-    text-align:left;
+  
   }
   .main__about-our-team, .main__team-member-block_evg-about-in-details, .main__team-member-block_mar-about-in-details, .main__team-member-block_alex-about-in-details{    
     display: flex;
     align-content: center; 
-    justify-content: center;
+    justify-content: center;  
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
-    text-align: left;
-   /* margin-top:5%;
-    padding-left:7%;
-    margin-left:2%;
-    margin-right:2%;
-    padding-right:5%;
-    margin-bottom:7%;*/
   }
+  .main__about-our-team{
+    padding-bottom: 7%;
+  }
+  .main__team-member-block_evg-about-in-details, .main__team-member-block_mar-about-in-details, .main__team-member-block_alex-about-in-details{
+  padding-bottom: 7%;
+  }    
   .main__team-member-block_evg-about, .main__team-member-block_mar-about, .main__team-member-block_alex-about{
     display: flex;
     justify-content:flex-start;
+    text-align:left;
     font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 1.1rem;
-    text-align:left;
-  }
+    }
 
   .main__we-wait-you{
     display: flex;
     border: 9px solid #3D6733;
-    /*border: 2px solid #761F28;*/
-    /*background-color:#761F28;;
-    /*zoom:0.6;
-    margin-top:10%;
-    padding-bottom:20%;*/
   }
   .main__we-wait-you-text{
     display: flex;
@@ -220,9 +210,6 @@ a {
     background-color: #ffffff;
   }
   .footer{
-   /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);*/
     grid-column: 1/4;
     grid-row: 3/4;
 
@@ -250,12 +237,6 @@ a {
     margin-top: -5%;
     margin-left: -10%;
     padding-bottom: 7%;
-    /*display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column: 2/4;
-    grid-row: 1/2;
-    direction: row;*/
     color: rgb(11, 11, 11);
     font-size: 1.2em;
     font-weight: 400;
@@ -278,9 +259,9 @@ a {
     flex-direction:row;
     justify-content: flex-end;
     align-items: flex-end;
-    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     margin-top: 7%;
-    margin-left: 2%;
+    margin-left: 2%;    
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 1.2rem;
  }
   .footer__menu-item_socials{
