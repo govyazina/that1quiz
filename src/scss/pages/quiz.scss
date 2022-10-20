@@ -52,11 +52,13 @@
 
 .quiz-card__location {
     color: $brand-color-red;
+    border-bottom: $brand-color-red solid 1px;
     cursor: pointer;
 }
 
 .quiz-card__location:hover {
-    text-decoration: underline;
+    color: $brand-color-blue;
+    border-bottom: $brand-color-blue solid 1px;
 }
 
 .quiz-card__button {
