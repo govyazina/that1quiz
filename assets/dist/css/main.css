@@ -661,11 +661,13 @@ a {
 
 .quiz-card__location {
   color: #761F28;
+  border-bottom: #761F28 solid 1px;
   cursor: pointer;
 }
 
 .quiz-card__location:hover {
-  text-decoration: underline;
+  color: #1E5D86;
+  border-bottom: #1E5D86 solid 1px;
 }
 
 .quiz-card__button {
@@ -795,6 +797,57 @@ a {
 
 .slider__control[data-slide=next]::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%23fff%27 viewBox=%270 0 8 8%27%3E%3Cpath d=%27M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z%27/%3E%3C/svg%3E");
+}
+
+.score-table {
+  table-layout: fixed;
+  width: 100vw;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.score-table__head {
+  font-size: 0.7rem;
+}
+
+th, td {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.score-table__head_name {
+  width: 25vw;
+}
+
+.score-table__head_points, .score-table__head_points-for-next {
+  width: 15vw;
+  padding: 0;
+}
+
+.score-table__head_level, .score-table__head_next-level {
+  width: 20vw;
+  padding: 0;
+}
+
+.score__table-cell_yellow {
+  background-color: #ecd391;
+}
+
+.score__table-cell_new {
+  background-color: rgba(102, 178, 227, 0.51);
+}
+
+.score__table-cell_purple {
+  background-color: rgba(147, 112, 219, 0.42);
+}
+
+.score__table-cell_green {
+  background-color: rgba(95, 192, 73, 0.39);
 }
 
 a {
@@ -1238,6 +1291,7 @@ a {
 }
 
 .faq .faq__container {
+  max-width: 700px;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -1255,6 +1309,7 @@ a {
   padding: 1rem;
   text-align: left;
   font-size: 1.2rem;
+  color: #000000;
   border: rgba(30, 93, 134, 0.2) solid 5px;
   background: #FFFFFF;
   cursor: pointer;
