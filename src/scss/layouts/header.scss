@@ -4,22 +4,16 @@
     background: #fff;
 }
 
-.header__logo {
-    max-width: 120px;
-}
-
-.header__button {
-    background: #F5C859;
-}
-
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1170px;
     width: 100%;
-    color: #000;
     margin: 0 auto;
+}
+
+.header__logo {
+    max-width: 120px;
 }
 
 .nav-menu {
@@ -29,18 +23,39 @@
     width: 80%;
 }
 
-.nav-menu a {
-    color: #000;
-    text-decoration: none;
+.menu {
     font-size: 1rem;
-    border-bottom: 1px solid transparent;
-    transition: 0.5s;
+    text-decoration: none;
+    color: #000000;
+
+    /*border-bottom: 1px solid transparent;
+    transition: 0.5s;*/
 }
 
-.nav-menu a:hover,
-.nav-menu a:active,
-.nav-menu a.active {
+.menu:hover,
+.menu:active {
     border-bottom: 1px solid #000;
+}
+
+.header__button {
+    background: $brand-color-yellow;
+}
+
+.header__button:hover {
+    border-bottom: none;
+}
+
+.header__socials {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.header__social {
+    margin-left: 1.5vw;
+}
+
+.header__element {
+    width: 45px;
 }
 
 .burger {
@@ -52,7 +67,7 @@
     width: 30px;
     height: 3px;
     margin: 5px;
-    background: #000;
+    background: $brand-color-blue;
     transition: all 0.5s ease-in;
 }
 
@@ -66,20 +81,6 @@
 
 .burger.active .line3 {
     transform: rotate(-45deg) translate(5px, -6px);
-}
-
-.header__socials {
-    display: flex;
-    margin-top: 2vh;
-}
-
-.header__social {
-    margin-left: 1.5vw;
-    width: 50%;
-}
-
-.header__element {
-    width: 45px;
 }
 
 @media screen and (min-width: 821px) {
@@ -98,10 +99,6 @@
         overflow-x: hidden;
     }
 
-    .burger {
-        display: block;
-    }
-
     .header {
         top: 0;
         left: 0;
@@ -111,20 +108,24 @@
     .nav-menu {
         position: absolute;
         top: 100px;
-        width: 0;
-        padding-left: 0;
-        background: #fff;
+        z-index: 1;
+
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        transition: right 0.5s ease-in;
+        width: 0;
+        padding-left: 0;
         padding-top: 10vh;
         padding-bottom: 10vh;
+
+        background: #fff;
+        transition: right 0.5s ease-in;
     }
 
-    .nav-menu .menu {
-        opacity: 0;
+    .menu {
         margin-bottom: 5vh;
+        opacity: 0;
     }
 
     .nav-menu.active {
@@ -132,7 +133,7 @@
         width: 100%;
     }
 
-    .nav-menu a {
+    .menu {
         font-size: 1.3rem;
     }
 
@@ -140,6 +141,10 @@
         display: flex;
         justify-content: center;
         margin-right: 1.5vw;
+    }
+
+    .burger {
+        display: block;
     }
 
 }
