@@ -5,6 +5,7 @@
 .faq {
 
     .faq__container {
+        max-width: 700px;
         padding-top: 10vh;
         padding-bottom: 10vh;
 
@@ -26,6 +27,7 @@
 
                     text-align: left;
                     font-size: 1.2rem;
+                    color: #000000;
 
                     border: rgba(30, 93, 134, 0.2) solid 5px;
                     background: #FFFFFF;
