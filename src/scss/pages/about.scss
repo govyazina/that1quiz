@@ -103,8 +103,6 @@
     }
 }
 
-
-
 .about-faq {
     display: flex;
     flex-direction: column;
@@ -118,5 +116,9 @@
         background-color: $brand-color-red;
         padding: 4% 10%;
         margin-bottom: 3rem;
+    }
+
+    &__button_red {
+        background-color: $brand-color-red;
     }
 }
