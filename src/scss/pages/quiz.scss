@@ -6,8 +6,8 @@
 }
 
 .quiz-card__title {
-    margin-top: 9vh;
-    margin-bottom: 9vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     align-self: center;
 }
@@ -31,7 +31,7 @@
 .quiz-card__container {
     display: flex;
     flex-direction: column;
-    gap: 8vh;
+    gap: 5vh;
     margin-bottom: 10vh;
 }
 
@@ -63,4 +63,22 @@
 
 .quiz-card__button {
     align-self: center;
+}
+
+@media (min-width: $screen-desktop) {
+    .quiz-card__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .quiz-card__details {
+        margin-top: 0;
+        padding-left: 2rem;
+    }
+
+    .quiz-card__text {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }

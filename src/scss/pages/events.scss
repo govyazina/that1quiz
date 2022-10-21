@@ -5,6 +5,11 @@
     margin: 8vh 0;
 }
 
+.events-main__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .events-card {
     margin-bottom: 9vh;
 
@@ -61,4 +66,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (min-width: $screen-desktop) {
+    .events-main__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .events-card {
+        width: 40%;
+    }
 }
