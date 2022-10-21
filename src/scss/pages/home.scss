@@ -9,7 +9,7 @@
 
 // nav-links
 
-.index-nav {
+/*.index-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -57,53 +57,99 @@
 
 .index-nav__bg_bg4 {
   background-image: url("../../design/assets/images/home/index-nav/index-rhombus.svg");
-}
+}*/
 
 
-/*index-nav
+
+
+/*index-nav*/
 
 .index-nav__container {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.index-nav__wrapper {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .index-nav__link {
   display: flex;
   align-items: center;
   justify-items: center;
+  width: 35vw;
+  height: 35vw;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
 }
 
 .index-nav__link_triangle {
-  width: 35vw;
-  height: 35vw;
-  background-image: url("../../design/assets/images/home/index-nav/index-triangle_2.svg");
+  background-image: url("../../design/assets/images/home/index-nav/index-triangle-2.svg");
 }
 
 .index-nav__link_circle {
-  width: 35vw;
-  height: 35vw;
-  background-image: url("../../design/assets/images/home/index-nav/index-circle.svg");
+  background-image: url("../../design/assets/images/home/index-nav/index-circle-2.svg");
 }
 
 .index-nav__link_square {
-  width: 35vw;
-  height: 35vw;
-  background-image: url("../../design/assets/images/home/index-nav/index-square.svg");
+  background-image: url("../../design/assets/images/home/index-nav/index-square-2.svg");
 }
 
-.index-nav__link_diamond {
-  width: 35vw;
-  height: 35vw;
-  background-image: url("../../design/assets/images/home/index-nav/index-rhombus.svg");
+.index-nav__link_rhombus {
+  background-image: url("../../design/assets/images/home/index-nav/index-rhombus-2.svg");
 }
 
-.index-nav__link_text {
-  color: white;
+.index-nav__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+}
+
+.index-nav__text {
+  width: 50%;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.5rem;
-}*/
+  line-height: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+.index-nav__text_triangle {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+.index-nav__text_rhombus {
+  padding-bottom: 1rem;
+  padding-right: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .index-nav__link {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .index-nav__text {
+    padding-bottom: 1rem;
+  }
+}
 
 
 
