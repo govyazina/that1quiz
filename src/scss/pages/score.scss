@@ -1,7 +1,7 @@
 @import '../layouts/global.scss';
 
 .score-about {
-padding: 8vh 0;
+  padding: 8vh 0;
 }
 
 .score-about__title {
@@ -12,21 +12,28 @@ padding: 8vh 0;
 .score-table__container {
   padding-left: 0;
   padding-right: 0;
-
-
 }
+
 .score-table {
   table-layout: fixed;
-  width: 100vw;
+  width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
   font-size: 0.8rem;
   text-align: center;
+  @media (min-width: $screen-desktop) {
+    font-size: 1rem;
+
+  }
 }
 
 .score-table__head {
   font-size: 0.7rem;
   background-color: #E0E0E3;
+  @media (min-width: $screen-desktop) {
+    font-size: 1rem;
+
+  }
 }
 
 th, td {
@@ -37,16 +44,16 @@ th, td {
 }
 
 .score-table__head_name {
-  width: 15vw;
+  width: 30%;
 }
 
 .score-table__head_points, .score-table__head_points-for-next {
-  width: 10vw;
+  width: 15%;
   padding: 0;
 }
 
 .score-table__head_level, .score-table__head_next-level {
-  width: 15vw;
+  width: 20%;
   padding: 0;
 }
 
