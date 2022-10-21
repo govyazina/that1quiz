@@ -1,2 +1,74 @@
 @import '../layouts/global.scss';
 
+.score-about {
+  padding: 8vh 0;
+}
+
+.score-about__title {
+  text-align: center;
+  padding-bottom: 8vh;
+}
+
+.score-table__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.score-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+  @media (min-width: $screen-desktop) {
+    font-size: 1rem;
+
+  }
+}
+
+.score-table__head {
+  font-size: 0.7rem;
+  background-color: #E0E0E3;
+  @media (min-width: $screen-desktop) {
+    font-size: 1rem;
+
+  }
+}
+
+th, td {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.score-table__head_name {
+  width: 30%;
+}
+
+.score-table__head_points, .score-table__head_points-for-next {
+  width: 15%;
+  padding: 0;
+}
+
+.score-table__head_level, .score-table__head_next-level {
+  width: 20%;
+  padding: 0;
+}
+
+.score__table-cell_yellow {
+  background-color: #ecd391;
+}
+
+.score__table-cell_new {
+ background-color: rgba(102, 178, 227, 0.51);
+}
+
+.score__table-cell_purple {
+  background-color: rgba(147, 112, 219, 0.42);
+}
+
+.score__table-cell_green {
+  background-color: rgba(95, 192, 73, 0.39);
+}
