@@ -12,6 +12,7 @@
 
 .score-table__head {
   font-size: 0.7rem;
+  background-color: #E0E0E3;
 }
 
 th, td {
@@ -19,7 +20,6 @@ th, td {
   border-collapse: collapse;
   border: 1px solid black;
   padding: 0.5rem;
-
 }
 
 .score-table__head_name {
