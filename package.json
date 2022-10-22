@@ -4,7 +4,8 @@
   "description": "Sass Setup",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "build": "webpack build --mode=production"
   },
   "author": "",
   "license": "ISC",

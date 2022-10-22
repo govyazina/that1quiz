@@ -360,9 +360,9 @@ new ItcSlider('.slider', {
   swipe: true
 });
 
-/*Кнопка - Смотреть больше фото (gallery.html)*/
+/*button to hide sliders*/
 
-function readMore() {
+/*function readMore() {
   var hide = document.getElementById("hide");
   var more = document.getElementById("more");
   var btn = document.getElementById("btn");
@@ -376,4 +376,4 @@ function readMore() {
     btn.innerHTML = "Назад к недавним фото";
     more.style.display = "inline";
   }
-}
+}*/
