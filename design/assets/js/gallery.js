@@ -360,7 +360,7 @@ new ItcSlider('.slider', {
   swipe: true
 });
 
-/*Кнопка - Смотреть больше фото (gallery.html)*/
+/*button see more*/
 
 function readMore() {
   var hide = document.getElementById("hide");
