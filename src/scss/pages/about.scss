@@ -1,8 +1,15 @@
 @import '../layouts/global.scss';
 
+.about__container {
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10vh;
+}
+
 .about__title {
     text-align: center;
-    padding: 6rem 0rem 3rem 0rem;
+    padding: 0rem 0rem 3rem 0rem;
 }
 
 .about__photo-background {
@@ -17,20 +24,26 @@
     padding: 10% 5%;
 }
 
+.about-block__container {
+    max-width: 700px;
+    margin-bottom: 10vh;
+}
+
 .about-block {
     border: 5px solid;
-    margin: 0rem 1rem 3rem;
+    margin-bottom: 3rem;
 
 
     &__circles {
         display: flex;
         justify-content: center;
+        margin-top: 1rem;
 
         .circle {
             border-radius: 50%;
-            width: 3rem;
-            height: 3rem;
-            margin: 20px;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 7px;
         }
 
         .circle_blue {
@@ -48,7 +61,8 @@
 
     &__text {
         text-align: center;
-        padding: 2rem;
+        margin: 0;
+        padding: 1.5rem;
         font-family: $default-font;
     }
 
@@ -81,57 +95,63 @@
     &_triangles {
         background-image: url(../../design/assets/images/about/decoration/triangles.svg);
         height: 370px;
-        width: 302px;
+        width: 370px;
+        background-size: 100%;
+        padding-left: 0.5rem;
+        padding-top: 1rem;
     }
 
     &_circles {
         background-image: url(../../design/assets/images/about/decoration/circles.svg);
         height: 370px;
         width: 302px;
+        padding-right: 1.3rem;
+        padding-bottom: 1.3rem;
     }
 
     &_squares {
         background-image: url(../../design/assets/images/about/decoration/squares.svg);
         height: 370px;
         width: 302px;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     &_rhombi {
         background-image: url(../../design/assets/images/about/decoration/rhombi.svg);
         height: 370px;
         width: 302px;
+        padding-right: 1.1rem;
+        padding-bottom: 2rem;
     }
 }
 
 .about-faq {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin-bottom: 8rem;
+
+    &__title {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
 
     &__button_red {
         background-color: $brand-color-red;
     }
 }
 
-@media (min-width: $screen-desktop) {
-
-    .about__photo-background {
-        margin: 5% 20% 3%;
-    }
-
-    .about-block {
-        margin: 5% 20% 3%;
-    }
+@media (min-width: 750px) {
 
     .about__container {
-        padding: 5% 10% 5%;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .about-game,
     .about-rounds {
         display: flex;
         align-items: center;
+        margin-bottom: 5vh;
     }
 
     .about-rules,
@@ -139,16 +159,27 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        margin-bottom: 5vh;
     }
 
     .about__subtitle_game,
     .about__subtitle_rounds {
-        margin-right: 9rem;
+        margin-right: 2.5rem;
     }
 
     .about__subtitle_rules,
     .about__subtitle_ranking {
-        margin-left: 9rem;
+        margin-left: 2.5rem;
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    .about__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-faq__title {
+        margin-bottom: 10vh;
+    }
 }
