@@ -2,7 +2,7 @@
 
 .events-main__title {
     text-align: center;
-    margin: 10vh 0;
+    margin-top: 10vh;
 }
 
 .events-main__container {
@@ -88,9 +88,22 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 
     .events-card {
         width: 40%;
+    }
+
+    .events-card__button {
+        cursor: pointer;
+        padding: 0.9rem;
+        transition: 0.5s;
+    }
+
+    .events-card__button:hover {
+        padding: 0.9rem 1.8rem;
+        transition: 0.5s;
     }
 }
