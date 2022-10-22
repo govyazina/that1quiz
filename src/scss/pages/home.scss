@@ -159,6 +159,16 @@ a {
 
 .index-that-is-t1q {
   margin-bottom: 5rem;
+  margin-top: 5vh;
+}
+
+.index-that-is-t1q__container {
+  max-width: 700px;
+}
+
+.index-that-is-t1q__container_photo {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .index-that-is-t1q__photo-wrap {
@@ -177,14 +187,19 @@ a {
   margin: 0 0;
 }
 
-.index-that-is-t1q__button-red {
+.index-that-is-t1q__button_red {
   background-color: $brand-color-red;
 }
 
 //why-t1q
 
-.index-why-t1q__container {
+.index-why-t1q {
   margin-bottom: 5rem;
+  margin-top: 10vh;
+}
+
+.index-why-t1q__container {
+  max-width: 700px;
 }
 
 .index-why-t1q__item {
@@ -289,6 +304,14 @@ a {
   background: $brand-color-blue;
 }
 
+.index-our-question__circle_yellow {
+  background: $brand-color-yellow;
+}
+
+.index-our-question__circle_grey {
+  background: $brand-color-gray;
+}
+
 .index-our-question__text {
   width: 75%;
   text-align: start;
@@ -312,4 +335,25 @@ a {
 .index__button {
   background: $brand-color-yellow;
   color: #000000;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .index-our-question__text {
+    width: 80%;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) {
+  .index-that-is-t1q__container_photo {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .index-our-question__text {
+    width: 85%;
+  }
 }
