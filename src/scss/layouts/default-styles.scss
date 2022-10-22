@@ -47,4 +47,19 @@ a {
   text-align: center;
   color: #FFFFFF;
   padding: 1rem 2rem;
+  @media (min-width: $screen-desktop) {
+    padding: 1rem 1rem;
+    transition: 0.5s;
+    &:hover {
+      padding: 1rem 2rem;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  html {
+    font-size: 20px;
+  }
+
 }

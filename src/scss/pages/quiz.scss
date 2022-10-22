@@ -56,9 +56,13 @@
     cursor: pointer;
 }
 
+
 .quiz-card__location:hover {
     color: $brand-color-blue;
     border-bottom: $brand-color-blue solid 1px;
+}
+.quiz-card__location_poin {
+    display: inline-block;
 }
 
 .quiz-card__button {
