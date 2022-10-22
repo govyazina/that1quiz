@@ -2,7 +2,7 @@
 
 .events-main__title {
     text-align: center;
-    margin: 8vh 0;
+    margin: 10vh 0;
 }
 
 .events-main__container {
@@ -50,7 +50,9 @@
 
 .events-card__button {
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .events-card__button_red {
@@ -66,6 +68,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.events-card__date {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+
+.events-card__time {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2px;
 }
 
 @media (min-width: $screen-desktop) {
