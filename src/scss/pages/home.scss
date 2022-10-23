@@ -81,22 +81,6 @@
   padding-right: 0.3rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-@media screen and (min-width: 800px) {
-  .index-nav__link {
-    width: 15vw;
-    height: 15vw;
-  }
-
-  .index-nav__text {
-    padding-bottom: 1rem;
-  }
-}
-
-
 // that-is-t1q
 
 .index-that-is-t1q {
@@ -175,8 +159,6 @@ a {
   border: 5px solid $brand-color-yellow;
   box-shadow: -14px -16px 0 2px $brand-color-yellow;
 }
-
-
 
 /*index-our-question*/
 
@@ -262,5 +244,23 @@ a {
 
   .index-our-question__text {
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .index-nav__link {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .index-nav__text {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .index-play {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
   }
 }
