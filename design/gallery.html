@@ -14,33 +14,405 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
 
     <!--    project styles-->
-    <link rel="stylesheet" href="../dist/css/main.css">
+        <link rel="stylesheet" href="./assets/dist/css/main.css">
 
     <!--    favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon_package/site.webmanifest">
+<!--    <link rel="manifest" href="./assets/favicon_package/site.webmanifest">-->
     <link rel="mask-icon" href="./assets/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Тот самый Квиз — Главная</title>
+    <title>Тот самый квиз - Фотографии с игр</title>
 
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
-
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__logo" href="./index.html"><img src="./assets/images/that1quiz logo/that1quiz_logo.png" alt="Логотип"></a>
+          <div class="nav-menu">
+            <a class="menu" href="./events.html">Наши игры</a>
+            <a class="menu" href="./score.html">Общий зачет</a>
+            <a class="menu" href="./gallery.html">Фото с игр</a>
+            <a class="menu" href="./team.html">О нас</a>
+            <a class="menu" href="./about.html">Что такое that1quiz?</a>
+            <a class="menu header__button" href="./events.html">Записаться на игру</a>
+            <div class="header__socials">
+              <a class="header__social" href="https://www.facebook.com/groups/that1quiz/?ref=share_group_link"
+              target="_blank"><img class="header__element" src="./assets/images/social media logo/fb.svg" alt="Facebook"></a>
+              <a class="header__social" href="https://www.instagram.com/that1quiz/"
+              target="_blank"><img class="header__element" src="./assets/images/social media logo/insta.svg" alt="Instagram"></a>
+              <a class="header__social" href="https://t.me/that1quiz"
+              target="_blank"><img class="header__element" src="./assets/images/social media logo/telega.svg" alt="Telegram"></a>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="main">
+        <section class="gallery">
+      
+            <h1 class="gallery__title">Фотографии с игр</h1>
+      
+            <div class="gallery-card">
+              <h2 class="gallery-card__title gallery-card__title_small">Игра #10</h2>
+              <p class="gallery-card__text">13 октября 2022</p>
+              <div class="slider" data-slider="itc-slider">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz10/8G6A7801.JPG" alt="Игра #10">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz10/8G6A7915.JPG" alt="Игра #10">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz10/8G6A7986.JPG" alt="Игра #10">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz10/8G6A7701.JPG" alt="Игра #10">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz10/8G6A8430.JPG" alt="Игра #10">
+                    </div>
+                  </div>
+                  <button class="slider__control" data-slide="prev"></button>
+                  <button class="slider__control" data-slide="next"></button>
+                </div>
+              </div>
+              <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1yAnicawSA9E7G_wiPZRJQT5IRO2_z2pd" target="_blank">Посмотреть все фото</a>
+            </div>
+      
+            <div class="gallery-card">
+              <h2 class="gallery-card__title gallery-card__title_small">Игра #9</h2>
+              <p class="gallery-card__text">29 сентября 2022</p>
+              <div class="slider" data-slider="itc-slider">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz9/8G6A6520.JPG" alt="Игра #9">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz9/8G6A6576.JPG" alt="Игра #9">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz9/8G6A6762.JPG" alt="Игра #9">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz9/8G6A6975.JPG" alt="Игра #9">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./assets/images/gallery/quiz9/8G6A7417.JPG" alt="Игра #9">
+                    </div>
+                  </div>
+                  <button class="slider__control" data-slide="prev"></button>
+                  <button class="slider__control" data-slide="next"></button>
+                </div>
+              </div>
+              <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1H4fWVsVgRJhc6i3G_wSIO51X7-v4bU3m" target="_blank">Посмотреть все фото</a>
+            </div>
 
+            <!--button to hide sliders with js-->
+            <!--<div id="hide"></div>
+            <div id="more">-->
+
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #8</h2>
+                <p class="gallery-card__text">15 сентября 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz8/8G6A5459.JPG" alt="Игра #8">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz8/8G6A5500.JPG" alt="Игра #8">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz8/8G6A5572.JPG" alt="Игра #8">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz8/8G6A5581.JPG" alt="Игра #8">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz8/8G6A5877.JPG" alt="Игра #8">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/15EIsIGvYV5Fmrslv_KzY2zeZKzhMGZu9" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #7</h2>
+                <p class="gallery-card__text">30 июня 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz7/8G6A4496.JPG" alt="Игра #7">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz7/8G6A4640.JPG" alt="Игра #7">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz7/8G6A4744.JPG" alt="Игра #7">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz7/8G6A4910.JPG" alt="Игра #7">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz7/8G6A5077.JPG" alt="Игра #7">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1uCu4Xb_udrCNT2ju7hgtBa_cDFutld-5" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #6</h2>
+                <p class="gallery-card__text">9 июня 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz6/8G6A3282.JPG" alt="Игра #6">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz6/8G6A3234.JPG" alt="Игра #6">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz6/8G6A3213.JPG" alt="Игра #6">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz6/8G6A3156.JPG" alt="Игра #6">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz6/8G6A3334.JPG" alt="Игра #6">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1NzJmpkEKLLgOsxP18v71f1rINFIp668z" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #5</h2>
+                <p class="gallery-card__text">12 мая 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz5/8G6A2789.JPG" alt="Игра #5">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz5/8G6A2312.JPG" alt="Игра #5">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz5/8G6A2359.JPG" alt="Игра #5">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz5/8G6A2478.JPG" alt="Игра #5">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz5/8G6A2510.JPG" alt="Игра #5">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1SL9RrGshb5i3hxExeHD-YTVGY-fjqlC9" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #4</h2>
+                <p class="gallery-card__text">28 апреля 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz4/8G6A1610.JPG" alt="Игра #4">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz4/8G6A1592.JPG" alt="Игра #4">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz4/8G6A1754.JPG" alt="Игра #4">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz4/8G6A1922.JPG" alt="Игра #4">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz4/8G6A2046.JPG" alt="Игра #4">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/18DJqI0mfqnqz7GFjsA9hcvTZwvKlW4lW" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #3</h2>
+                <p class="gallery-card__text">14 апреля 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz3/8G6A0872.JPG" alt="Игра #3">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz3/8G6A0973.JPG" alt="Игра #3">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz3/8G6A0867.JPG" alt="Игра #3">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz3/8G6A1109.JPG" alt="Игра #3">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz3/8G6A1308.JPG" alt="Игра #3">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1Muu1FKDWUeerqtlX7xSSc-bA3rtYt4HN" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #2</h2>
+                <p class="gallery-card__text">31 марта 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz2/8G6A0003.JPG" alt="Игра #2">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz2/8G6A0038.JPG" alt="Игра #2">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz2/8G6A0105.JPG" alt="Игра #2">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz2/8G6A0180.JPG" alt="Игра #2">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz2/8G6A0640.JPG" alt="Игра #2">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/12ynSPUFTUPWK7SDOrEElRJNiQFO5LS7b" target="_blank">Посмотреть все фото</a>
+              </div>
+        
+              <div class="gallery-card">
+                <h2 class="gallery-card__title gallery-card__title_small">Игра #1</h2>
+                <p class="gallery-card__text">17 марта 2022</p>
+                <div class="slider" data-slider="itc-slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz1/8G6A9308.JPG" alt="Игра #1">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz1/8G6A9329.JPG" alt="Игра #1">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz1/8G6A9273.JPG" alt="Игра #1">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz1/8G6A9427.JPG" alt="Игра #1">
+                      </div>
+                      <div class="slider__item">
+                        <img src="./assets/images/gallery/quiz1/8G6A9484.JPG" alt="Игра #1">
+                      </div>
+                    </div>
+                    <button class="slider__control" data-slide="prev"></button>
+                    <button class="slider__control" data-slide="next"></button>
+                  </div>
+                </div>
+                <a class="gallery-card__button" href="https://drive.google.com/drive/folders/1Ue1mS1IZVBXAJvizt3dVB7_RmnT9um9U" target="_blank">Посмотреть все фото</a>
+              </div>
+
+            <!--button to hide sliders with js-->
+            <!--</div>
+
+            <button class="gallery-card__button gallery-card__button_blue" id="btn" onclick="readMore()">Смотреть больше фото</button>-->
+
+          </section>
+            
     </main>
 
     <footer class="footer">
+      <div class="footer__container">
 
+        <div class="footer__items">
+
+          <a class="footer__logo" href="./index.html"><img src="./assets/images/that1quiz logo/that1quiz_logo_bw.png" alt="Логотип"></a>
+
+          <div class="footer__links">
+            <a class="footer__link" href="./events.html">Наши игры</a>
+            <a class="footer__link" href="./score.html">Общий зачет</a>
+            <a class="footer__link" href="./gallery.html">Фото с игр</a>
+            <a class="footer__link" href="./team.html">О нас</a>
+            <a class="footer__link" href="./about.html">Что такое that1quiz?</a>
+            <div class="footer__socials">
+              <a class="footer__social" href="https://www.facebook.com/groups/that1quiz/?ref=share_group_link"
+            target="_blank"><img class="footer__element" src="./assets/images/social media logo/facebook_black.svg" alt="Facebook"></a>
+              <a class="footer__social" href="https://www.instagram.com/that1quiz/"
+            target="_blank"><img class="footer__element" src="./assets/images/social media logo/insta_black.svg" alt="Instagram"></a>
+              <a class="footer__social" href="https://t.me/that1quiz"
+              target="_blank"><img class="footer__element" src="./assets/images/social media logo/telega_black.svg" alt="Telegram"></a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="footer__copyright">
+          <p class="footer__info">&copy; that1quiz, 2022. All rights reserved.</p>
+          <p class="footer__info"><a class="footer__developer" href="https://mariiabeliaeva.github.io/t1q-developers/" target="_blank">Web Developer</a></p>
+        </div>
+
+      </div>
     </footer>
 </div>
+
+<script src="./assets/js/main.js" defer></script>
+<script src="./assets/js/gallery.js" defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDJLDM7W1D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDJLDM7W1D');
+</script>
+
+
 </body>
 </html>

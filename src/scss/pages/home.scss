@@ -1,2 +1,266 @@
 @import '../layouts/global.scss';
 
+.index-main-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5rem
+}
+
+/*index-nav*/
+
+.index-nav__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.index-nav__wrapper {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.index-nav__link {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 35vw;
+  height: 35vw;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.index-nav__link_triangle {
+  background-image: url("../../design/assets/images/home/index-nav/index-triangle-2.svg");
+}
+
+.index-nav__link_circle {
+  background-image: url("../../design/assets/images/home/index-nav/index-circle-2.svg");
+}
+
+.index-nav__link_square {
+  background-image: url("../../design/assets/images/home/index-nav/index-square-2.svg");
+}
+
+.index-nav__link_rhombus {
+  background-image: url("../../design/assets/images/home/index-nav/index-rhombus-2.svg");
+}
+
+.index-nav__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+}
+
+.index-nav__text {
+  width: 50%;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+.index-nav__text_triangle {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+.index-nav__text_rhombus {
+  padding-bottom: 1rem;
+  padding-right: 0.3rem;
+}
+
+// that-is-t1q
+
+.index-that-is-t1q {
+  margin-bottom: 5rem;
+  margin-top: 5vh;
+}
+
+.index-that-is-t1q__container {
+  max-width: 700px;
+}
+
+.index-that-is-t1q__container_photo {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.index-that-is-t1q__photo-wrap {
+  background-image: url("../../design/assets/images/home/index-that-is-t1q__bg.svg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-that-is-t1q__photo {
+  padding: 15% 10%;
+}
+
+.index-that-is-t1q__text {
+  padding: 5rem 0;
+  margin: 0 0;
+}
+
+.index-that-is-t1q__button_red {
+  background-color: $brand-color-red;
+}
+
+//why-t1q
+
+.index-why-t1q {
+  margin-bottom: 5rem;
+  margin-top: 10vh;
+}
+
+.index-why-t1q__container {
+  max-width: 700px;
+}
+
+.index-why-t1q__item {
+  padding: 0.8rem 1rem;
+  margin: 3rem 0;
+  border: 5px solid $brand-color-yellow;
+  box-shadow: -14px -16px 0 2px $brand-color-yellow;
+}
+
+.index-why-t1q__item_blue {
+  border: 5px solid $brand-color-blue;
+  box-shadow: -14px -16px 0 2px $brand-color-blue;
+}
+
+.index-why-t1q__item_green {
+  border: 5px solid $brand-color-green;
+  box-shadow: -14px -16px 0 2px $brand-color-green;
+}
+
+.index-why-t1q__item_red {
+  border: 5px solid $brand-color-red;
+  box-shadow: -14px -16px 0 2px $brand-color-red;
+}
+
+.index-why-t1q__item_gray {
+  border: 5px solid $brand-color-gray;
+  box-shadow: -14px -16px 0 2px $brand-color-gray;
+}
+
+.index-why-t1q__item_yellow {
+  border: 5px solid $brand-color-yellow;
+  box-shadow: -14px -16px 0 2px $brand-color-yellow;
+}
+
+/*index-our-question*/
+
+.index-our-question__container {
+  max-width: 700px;
+}
+
+.index-our-question__items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.index-our-question__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.index-our-question__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $brand-color-green;
+}
+
+.index-our-question__circle_red {
+  background: $brand-color-red;
+}
+
+.index-our-question__circle_blue {
+  background: $brand-color-blue;
+}
+
+.index-our-question__circle_yellow {
+  background: $brand-color-yellow;
+}
+
+.index-our-question__circle_grey {
+  background: $brand-color-gray;
+}
+
+.index-our-question__text {
+  width: 75%;
+  text-align: start;
+  margin-top: 0;
+}
+
+.index-our-question__quote {
+  border: $brand-color-gray 10px solid;
+  padding: 1.5rem;
+  margin: 0;
+
+}
+
+/*index-play*/
+
+.index-play {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.index__button {
+  background: $brand-color-yellow;
+  color: #000000;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .index-our-question__text {
+    width: 80%;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .index-that-is-t1q__container_photo {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .index-our-question__text {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .index-nav__link {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .index-nav__text {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .index-play {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+}

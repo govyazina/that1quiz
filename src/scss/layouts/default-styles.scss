@@ -1,0 +1,74 @@
+@import './global.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $default-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+[class*="__title"] {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+[class*="__button"] {
+  border: none;
+  background: $brand-color-green;
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+
+  @media (min-width: $screen-desktop) {
+    padding: 1rem 1rem;
+    transition: 0.5s;
+
+    &:hover {
+      padding: 1rem 2rem;
+      transition: 0.5s;
+    }
+  }
+}
+
+/*@media (min-width: $screen-desktop) {
+  html {
+    font-size: 20px;
+  }
+
+}*/

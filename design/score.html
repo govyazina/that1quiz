@@ -14,33 +14,346 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
 
     <!--    project styles-->
-    <link rel="stylesheet" href="../dist/css/main.css">
+        <link rel="stylesheet" href="./assets/dist/css/main.css">
 
     <!--    favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon_package/site.webmanifest">
+<!--    <link rel="manifest" href="./assets/favicon_package/site.webmanifest">-->
     <link rel="mask-icon" href="./assets/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Тот самый Квиз — Главная</title>
+    <title>Тот самый Квиз — Общий зачет</title>
 
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
-
+        <div class="header__container">
+            <nav class="header__nav">
+                <a class="header__logo" href="./index.html"><img src="./assets/images/that1quiz logo/that1quiz_logo.png" alt="Логотип"></a>
+                <div class="nav-menu">
+                    <a class="menu" href="./events.html">Наши игры</a>
+                    <a class="menu" href="./score.html">Общий зачет</a>
+                    <a class="menu" href="./gallery.html">Фото с игр</a>
+                    <a class="menu" href="./team.html">О нас</a>
+                    <a class="menu" href="./about.html">Что такое that1quiz?</a>
+                    <a class="menu header__button" href="./events.html">Записаться на игру</a>
+                    <div class="header__socials">
+                        <a class="header__social" href="https://www.facebook.com/groups/that1quiz/?ref=share_group_link"
+                           target="_blank"><img class="header__element" src="./assets/images/social media logo/fb.svg" alt="Facebook"></a>
+                        <a class="header__social" href="https://www.instagram.com/that1quiz/"
+                           target="_blank"><img class="header__element" src="./assets/images/social media logo/insta.svg" alt="Instagram"></a>
+                        <a class="header__social" href="https://t.me/that1quiz"
+                           target="_blank"><img class="header__element" src="./assets/images/social media logo/telega.svg" alt="Telegram"></a>
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="main">
+        <div class="score-about__container">
+        <section class="score-about ">
+            <h1 class="score-about__title">Общий зачет</h1>
+            <p class="score-about__text">Каждая команда, сыгравшая хотя бы в одном нашем квизе автоматически попадает в командный зачёт. Это общая турнирная таблица, показывающая баллы, набранные командой за одну или больше игр.</p>
+            <p class="score-about__text">Полученные командой на каждой игре баллы будут суммироваться и добавляться к уже имеющимся.</p>
+        </section>
+        </div>
+
+        <table class="score-table score-table__container">
+            <tr class="score-table__head">
+                <th class="score-table__head_name">Название команды</th>
+                <th class="score-table__head_points">Баллы</th>
+                <th class="score-table__head_points-for-next">Осталось</th>
+                <th class="score-table__head_level">Ранг</th>
+                <th class="score-table__head_next-level">Следующий ранг</th>
+            </tr>
+            <tr>
+                <td>Еще отыграемся</td>
+                <td>327</td>
+                <td>173</td>
+                <td class="score__table-cell_yellow">Шерлок</td>
+                <td class="score__table-cell_new">???</td>
+            </tr>
+            <tr>
+                <td>Кретинетти</td>
+                <td>311.5</td>
+                <td>188.5</td>
+                <td class="score__table-cell_yellow">Шерлок</td>
+                <td class="score__table-cell_new">???</td>
+            </tr>
+            <tr>
+                <td>Снова они</td>
+                <td>259.5</td>
+                <td>40.5</td>
+                <td class="score__table-cell_purple">Донателло</td>
+                <td class="score__table-cell_yellow">Шерлок</td>
+            </tr>
+            <tr>
+                <td>ООО Зеленоглазое Такси</td>
+                <td>225.5</td>
+                <td>74.5</td>
+                <td class="score__table-cell_purple">Донателло</td>
+                <td class="score__table-cell_yellow">Шерлок</td>
+            </tr>
+            <tr>
+                <td>Мэри в Поппинс</td>
+                <td>225</td>
+                <td>75</td>
+                <td class="score__table-cell_purple">Донателло</td>
+                <td class="score__table-cell_yellow">Шерлок</td>
+            </tr>
+            <tr>
+                <td>Что мы делаем в Твери?</td>
+                <td>174</td>
+                <td>26</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+                <td class="score__table-cell_purple">Донателло</td>
+            </tr>
+            <tr>
+                <td>Ярость Топора</td>
+                <td>122</td>
+                <td>78</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+                <td class="score__table-cell_purple">Донателло</td>
+            </tr>
+            <tr>
+                <td>Lorem Ispum</td>
+                <td>93</td>
+                <td>7</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Назло Рекордам</td>
+                <td>77</td>
+                <td>23</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Вина Пуха</td>
+                <td>72</td>
+                <td>28</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Ресэксия</td>
+                <td>72</td>
+                <td>28</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Красавицы и чудовища</td>
+                <td>61</td>
+                <td>39</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Взрывные котята</td>
+                <td>54</td>
+                <td>46</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Уха</td>
+                <td>51</td>
+                <td>49</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>UCL Lads</td>
+                <td>48</td>
+                <td>52</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Powerpuffs</td>
+                <td>34</td>
+                <td>66</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Свидетели Пудинга</td>
+                <td>32</td>
+                <td>68</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>ML GUYS</td>
+                <td>31</td>
+                <td>69</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Квизи пизи</td>
+                <td>29</td>
+                <td>71</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Котики-обормотики</td>
+                <td>27</td>
+                <td>73</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>#itoldyouso</td>
+                <td>27</td>
+                <td>73</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Свободные игроки</td>
+                <td>25</td>
+                <td>75</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Сборная солянка</td>
+                <td>25</td>
+                <td>75</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Жан Клод Ван Пиво</td>
+                <td>24</td>
+                <td>76</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>//TODO: Name</td>
+                <td>24</td>
+                <td>76</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Quizbusters</td>
+                <td>23</td>
+                <td>77</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Разнос</td>
+                <td>21</td>
+                <td>79</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Hi Reddit</td>
+                <td>21</td>
+                <td>79</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Сказочное Бали</td>
+                <td>20</td>
+                <td>80</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Интеллектуалы из Казахстана (ИЗК)</td>
+                <td>17</td>
+                <td>83</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Кардибобер</td>
+                <td>16</td>
+                <td>84</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Sorry not sorry</td>
+                <td>13</td>
+                <td>87</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+            <tr>
+                <td>Аруак</td>
+                <td>13</td>
+                <td>87</td>
+                <td>-</td>
+                <td class="score__table-cell_green">Мегамозг</td>
+            </tr>
+        </table>
 
     </main>
 
     <footer class="footer">
+        <div class="footer__container">
 
+            <div class="footer__items">
+
+                <a class="footer__logo" href="./index.html"><img src="./assets/images/that1quiz logo/that1quiz_logo_bw.png" alt="Логотип"></a>
+
+                <div class="footer__links">
+                    <a class="footer__link" href="./events.html">Наши игры</a>
+                    <a class="footer__link" href="./score.html">Общий зачет</a>
+                    <a class="footer__link" href="./gallery.html">Фото с игр</a>
+                    <a class="footer__link" href="./team.html">О нас</a>
+                    <a class="footer__link" href="./about.html">Что такое that1quiz?</a>
+                    <div class="footer__socials">
+                        <a class="footer__social" href="https://www.facebook.com/groups/that1quiz/?ref=share_group_link"
+                           target="_blank"><img class="footer__element" src="./assets/images/social media logo/facebook_black.svg" alt="Facebook"></a>
+                        <a class="footer__social" href="https://www.instagram.com/that1quiz/"
+                           target="_blank"><img class="footer__element" src="./assets/images/social media logo/insta_black.svg" alt="Instagram"></a>
+                        <a class="footer__social" href="https://t.me/that1quiz"
+                           target="_blank"><img class="footer__element" src="./assets/images/social media logo/telega_black.svg" alt="Telegram"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__copyright">
+                <p class="footer__info">&copy; that1quiz, 2022. All rights reserved.</p>
+                <p class="footer__info"><a class="footer__developer" href="https://mariiabeliaeva.github.io/t1q-developers/" target="_blank">Web Developer</a></p>
+            </div>
+
+        </div>
     </footer>
 </div>
+
+    <script src="./assets/js/main.js" defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDJLDM7W1D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RDJLDM7W1D');
+</script>
 </body>
 </html>

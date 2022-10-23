@@ -1,2 +1,51 @@
 @import '../layouts/global.scss';
 
+
+
+.faq {
+
+    .faq__container {
+        max-width: 700px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        .faq__title {
+            margin-top: 0;
+            margin-bottom: 10vh;
+            text-align: center;
+        }
+
+        .faq-item {
+
+            .faq-question {
+                margin: 20px 0 0;
+
+                .faq-question__trigger {
+                    width: 100%;
+                    height: 100%;
+                    padding: 1rem;
+
+                    text-align: left;
+                    font-size: 1.2rem;
+                    color: #000000;
+
+                    border: rgba(30, 93, 134, 0.2) solid 5px;
+                    background: #FFFFFF;
+
+                    cursor: pointer;
+                }
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                height: 0;
+                transition: height 0.5s;
+
+                .faq-answer__content {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+}

@@ -1,2 +1,148 @@
 @import '../layouts/global.scss';
 
+
+
+.main__container_photo {
+  max-width: 700px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.main__team-pic-wrap {
+  background-image: url(../../design/assets/images/team/background_team_new.svg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__team-pic {
+  padding: 15% 9%;
+}
+
+.main__about-our-team__container {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.main__team-member-block_evg-title,
+.main__team-member-block_mar-title,
+.main__team-member-block_alex-title {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  padding-bottom: 2vh;
+  margin: 0;
+}
+
+.main__about-our-team,
+.main__team-member-block_evg-about-in-details,
+.main__team-member-block_mar-about-in-details,
+.main__team-member-block_alex-about-in-details {
+  display: flex;
+  align-content: center;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main__about-our-team {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main__team-member-block_evg-about,
+.main__team-member-block_mar-about,
+.main__team-member-block_alex-about {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
+.main__we-wait-you {
+  display: flex;
+  border: 10px solid #3D6733;
+  margin-bottom: 10vh;
+  padding: 1rem;
+}
+
+.main__we-wait-you-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.main__we-wait-you__container {
+  max-width: 500px;
+}
+
+.main__team-member-block_evg__container,
+.main__team-member-block_mar__container,
+.main__team-member-block_alex__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__team-member-block {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+@media screen and (min-width: 700px) {
+
+  .main__team-member-block_evg__container,
+  .main__team-member-block_mar__container,
+  .main__team-member-block_alex__container {
+    flex-direction: row;
+  }
+
+  .main__team-member-block_evg-pic,
+  .main__team-member-block_mar-pic,
+  .main__team-member-block_alex-pic,
+  .main__team-member-block {
+    width: 50%;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .main__team-member-block {
+    padding-top: 0;
+    padding-left: 2rem;
+  }
+
+  .main__team-member-block_evg,
+  .main__team-member-block_mar,
+  .main__team-member-block_alex {
+    margin-top: 5vh;
+  }
+
+  .main__we-wait-you__container {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .main__team-member-block_evg,
+  .main__team-member-block_mar,
+  .main__team-member-block_alex {
+    margin-top: 10vh;
+  }
+
+  .main__we-wait-you {
+    margin-top: 10vh;
+  }
+
+}

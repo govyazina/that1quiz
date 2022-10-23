@@ -1,2 +1,137 @@
 @import '../layouts/global.scss';
 
+/*!
+* ItcSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2022 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+
+#more {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+
+    .gallery__title {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    .gallery-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+
+        .gallery-card__title_small {
+            margin: 0px;
+            font-size: 1.2rem;
+        }
+
+        .gallery-card__button {
+            margin-top: 2vh;
+        }
+    }
+
+    .gallery-card__button_blue {
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+
+        background: $brand-color-blue;
+        cursor: pointer;
+    }
+}
+
+/*slider*/
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.slider_disable-transition {
+    transition: none;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform;
+}
+
+/* buttons left and right */
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background: rgb(0 0 0 / 20%);
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider__control_hide {
+    display: none;
+}
+
+.slider__control[data-slide="prev"] {
+    left: 0;
+}
+
+.slider__control[data-slide="next"] {
+    right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(0 0 0 / 30%);
+    outline: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
