@@ -91,12 +91,11 @@
 .main__team-member-block_alex__container {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .main__team-member-block {
-  padding: 5vh 2rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 @media screen and (min-width: 700px) {
@@ -105,8 +104,6 @@
   .main__team-member-block_mar__container,
   .main__team-member-block_alex__container {
     flex-direction: row;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .main__team-member-block_evg-pic,
@@ -122,6 +119,7 @@
 
   .main__team-member-block {
     padding-top: 0;
+    padding-left: 2rem;
   }
 
   .main__team-member-block_evg,
@@ -140,6 +138,10 @@
   .main__team-member-block_evg,
   .main__team-member-block_mar,
   .main__team-member-block_alex {
+    margin-top: 10vh;
+  }
+
+  .main__we-wait-you {
     margin-top: 10vh;
   }
 
