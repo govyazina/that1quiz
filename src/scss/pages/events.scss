@@ -15,17 +15,17 @@
     margin-bottom: 9vh;
 
     border: 3px solid rgba(61, 103, 51, 0.2);
-    box-shadow: 0px 0px 15px 0px $brand-color-green;
+    box-shadow: 0 0 15px 0 $brand-color-green;
 }
 
 .events-card_red {
     border: 3px solid rgba(118, 31, 40, 0.2);
-    box-shadow: 0px 0px 15px 0px $brand-color-red;
+    box-shadow: 0 0 15px 0 $brand-color-red;
 }
 
 .events-card_blue {
     border: 3px solid rgba(30, 93, 134, 0.2);
-    box-shadow: 0px 0px 15px 0px $brand-color-blue;
+    box-shadow: 0 0 15px 0 $brand-color-blue;
 }
 
 .events-card__container {
